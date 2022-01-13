@@ -268,35 +268,31 @@ guys("Toni", "Toronto", "ON")
 guys(city="Hallafax", name="Jeffrey", province="NS")
 guys("Lenny", province="Windsor", city="ON")
 
+# def get_cities(students):
+#     '''Return a [list] of all of the cities from the students list'''
+#         # TODO Make an empty list
+#         # TODO Iterate through the list of students
+#         # TODO Append each city in the dict to the empty list
+#         # TODO return the list
+
+#         result = []
+
+#     for s in students:
+#         print(s)
+#         if s.get('city'):
+#             result.append(s.get('city'))
+
+#     return result
+
+# print('', get_cities(students))
 
 
-numbers = [1, 2, 3, 4]
-def addition(num):
-    return num + num
+def get_names(names):
+    results = []
 
-result = map(addition, numbers)
-# print(result)
+    for s in students:
+        if s.get('name'):
+            results.append(s.get('name'))
+        return results
 
-result2 = map(lambda x: x + x, numbers)
-# print(list(result2))
-
-result3 = map(lambda y: y * y, numbers)
-# print(list(result3))
-
-numbers1 = [1, 2, 3]
-numbers2 = [4, 5, 6]
-  
-result4 = map(lambda x, y: x + y, numbers1, numbers2)
-# print(list(result4))
-
-
-# a list contains both even and odd numbers. 
-seq = [0, 1, 2, 3, 5, 8, 13]
-  
-# result contains odd numbers of the list
-result5 = filter(lambda x: x % 2 != 0, seq)
-# print(list(result5)) # [1, 3, 5, 13]
-  
-# result contains even numbers of the list
-result6 = filter(lambda x: x % 2 == 0, seq)
-# print(list(result6)) # [0, 2, 8]
+    print ('names', get_names(students))
