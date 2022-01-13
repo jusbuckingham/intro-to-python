@@ -260,7 +260,7 @@ def say_hello(friend="Tim"): # if we don't put a parameter, it will default to T
 say_hello("Tom")
 
 def guys(name, city="Vancouver", province="BC"):
-  msg = "{} is moving to {}, {}"
+  msg = "{} is going to {}, {}"
   msg = msg.format(name, city, province)
   print(msg)
 
