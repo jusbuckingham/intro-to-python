@@ -33,16 +33,16 @@ print(count_scores(peeps)); # => { Pete: 4, Mike: 4, Dexter: 6 }
 
 
 def count_scores(people):
-    result = {}
+    scores_obj = {}
     for person in people:
         name = person.get('name')
         score = person.get('score')
         print(name)
-        if(not result.get(name)):
-            result[name] = score
+        if(not scores_obj.get(name)):
+            scores_obj[name] = score
         else:
-            result[name] += score
-    return result
+            scores_obj[name] += score
+    return scores_obj
 
 
 # Example 1
