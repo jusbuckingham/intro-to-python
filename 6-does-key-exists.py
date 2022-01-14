@@ -8,6 +8,7 @@ Examples:
 obj_1 = {'company': 'General Assembly', 'course': 'Software Engineering Immersive'}
 print(does_key_exist(obj_1, 'company')) # => True
 print(does_key_exist(obj_1, 'name')) # => False
+***********************************************************************/
 '''
 
 

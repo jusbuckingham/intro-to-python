@@ -13,6 +13,7 @@ ppl = [
 ]
 
 print(adults(ppl)); # => [ 'Khalid Robinson', 'Post Malone' ]
+***********************************************************************/
 '''
 
 def adults(people):

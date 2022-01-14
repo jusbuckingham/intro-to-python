@@ -10,6 +10,7 @@ object_2 = {'name': 'Two', 'location': 'San Francisco'}
 
 print(value_pair(object_1, object_2, 'location')) # => [ 'Remote', 'San Francisco' ]
 print(value_pair(object_1, object_2, 'name')) # => [ 'One', 'Two' ]
+***********************************************************************/
 '''
 
 

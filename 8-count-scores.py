@@ -29,6 +29,7 @@ peeps = [
   {'name': "Dexter", 'score': 2}
 ]
 print(count_scores(peeps)); # => { Pete: 4, Mike: 4, Dexter: 6 }
+***********************************************************************/
 '''
 
 

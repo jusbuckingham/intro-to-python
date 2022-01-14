@@ -9,6 +9,7 @@ print(cat_1) # => { name: 'Garfield', color: 'golden', toys: ['scratching-post',
 
 cat_2 = cat_builder('Whiskers', 'rainbow', ['poptarts'])
 print(cat_2) # => { name: 'Whiskers', color: 'rainbow', toys: [ 'poptarts' ] }
+***********************************************************************/
 '''
 
 
