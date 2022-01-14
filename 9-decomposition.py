@@ -19,6 +19,7 @@ print(is_prime(15)) # => False
 print(is_prime(303212)) # => False
 '''
 
+
 def is_prime(number):
     if number < 2:
         return False
