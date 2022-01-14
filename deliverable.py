@@ -136,16 +136,3 @@ def fizz_buzz_1(max):
 fizz_buzz_1(20)
 
 
-def even_caps(sentence):
-    new_sentence = ""
-    for i in range(0, len(sentence)):
-        char = sentence[i]
-        if i % 2 == 0:
-            capital_char = char.upper()
-            new_sentence += capital_char
-        else:
-            new_sentence += char
-    return new_sentence
-
-
-print(even_caps("Hello World"))
