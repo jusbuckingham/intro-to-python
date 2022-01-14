@@ -136,3 +136,16 @@ def fizz_buzz_1(max):
 fizz_buzz_1(20)
 
 
+def event_caps(sentence):
+    new_sentence = ""
+    for i in range(0, len(sentence)):
+        char = sentence[i]
+        if i % 2 == 0:
+            capital_char = char.upper()
+            new_sentence += capital_char
+        else:
+            new_sentence += char
+    return new_sentence
+
+
+print(event_caps("Hello World"))
