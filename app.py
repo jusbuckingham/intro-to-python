@@ -54,8 +54,8 @@ food = "eggs"
 print(food in "green eggs and ham")
 print(len(food)) # => 4
 
-provincement = "my code rules"[3:9]
-print(provincement)
+statement = "my code rules"[3:9]
+print(statement)
 
 if 7 == 7:
     print('This is 7')
@@ -130,10 +130,10 @@ print(cat_keys)
 
 
 # String Interpolation
-# province = "Washington province"
+# state = "Washington State"
 # year = 1889
 # n = 42
-# my_message = f"{province} was the {n}th province to join the union in {year}."
+# my_message = f"{state} was the {n}th state to join the union in {year}."
 # print(my_message)
 
 def st_nd_rd_th(n):
@@ -149,10 +149,10 @@ def st_nd_rd_th(n):
   else:
     return "th"
 
-province = "Washington province"
+state = "Washington State"
 year = 1889
 n = 42
-my_message = f"{province} was the {n}{st_nd_rd_th(n)} province to join the union in {year}."
+my_message = f"{state} was the {n}{st_nd_rd_th(n)} state to join the union in {year}."
 print(my_message)
 
 # 2
@@ -216,7 +216,31 @@ students = [
     { 
         "name": "Zack",
         "city": "Los Angeles"
-    }
+    },
+     { 
+        "name": "John",
+        "city": "Atlanta"
+    },
+    { 
+        "name": "Jane",
+        "city": "New York"
+    },
+    { 
+        "name": "Rob",
+        "city": "Los Angeles"
+    },
+     { 
+        "name": "Harper",
+        "city": "Washington"
+    },
+    { 
+        "name": "Mike",
+        "city": "Seattle"
+    },
+    { 
+        "name": "Set",
+        "city": "San Francisco"
+    },
 ]
 
 for i in range(len(students)):
@@ -259,40 +283,117 @@ def say_hello(friend="Tim"): # if we don't put a parameter, it will default to T
 
 say_hello("Tom")
 
-def guys(name, city="Vancouver", province="BC"):
-  msg = "{} is going to {}, {}"
-  msg = msg.format(name, city, province)
+def move(name, city="Seattle", state="Washington"):
+  msg = "{} is moving to {}, {}"
+  msg = msg.format(name, city, state)
   print(msg)
 
-guys("Toni", "Toronto", "ON")
-guys(city="Hallafax", name="Jeffrey", province="NS")
-guys("Lenny", province="Windsor", city="ON")
+move("Charlie", "Los Angeles", "California")
+move(city="San Francisco", name="Mark", state="California")
+move("John", state="New York", city="New York")
 
-# def get_cities(students):
-#     '''Return a [list] of all of the cities from the students list'''
-#         # TODO Make an empty list
-#         # TODO Iterate through the list of students
-#         # TODO Append each city in the dict to the empty list
-#         # TODO return the list
+def add(num1=0, num2=0):
+    return num1 + num2
 
-#         result = []
+print(add(4, 5))
+total = add(4, 5)
 
-#     for s in students:
-#         print(s)
-#         if s.get('city'):
-#             result.append(s.get('city'))
+def get_cities(students):
+    '''Return a [list] of all cities from the students list'''
+    # TODO Make a empty list
+    # TODO Iterate through the list of student
+    # TODO Append each city in the dict to the empty list
+    # TODO return the list
 
-#     return result
-
-# print('', get_cities(students))
-
-
-def get_names(names):
-    results = []
+    result = []
 
     for s in students:
-        if s.get('name'):
-            results.append(s.get('name'))
-        return results
+        if s.get('city'):
+            result.append(s.get('city'))
 
-    print ('names', get_names(students))
+    return result
+
+print('Cities list: ', get_cities(students))
+
+def parse_by_cities(students):
+    '''
+    Return a dict that has a key for each cities and 
+    a list of students for each city.
+    '''
+    # TODO Make a empty dict
+    # TODO Iterate through the list of students and perform logic
+        # if city is not in dict
+            # add the city and set that to an empty list
+        # logic -> if the city is in the dict
+            # append student name to list
+    # TODO return the dict
+
+    result = {}
+
+    for student in students:
+        print('print INSIDE', student)
+        if student.get('city'):
+            if not result.get(student.get('city')):
+                print('Does not exist')
+                result[student.get('city')] = []
+                city_list = result[student.get('city')] # []
+                city_list.append(student.get('name'))
+            else:
+                print('Does exist...')
+                city_list = result[student.get('city')]
+                city_list.append(student.get('name'))
+
+
+
+    print('---------------')
+    return result # gets printed when you run the function and wrap in print statement
+print('printing OUTSIDE', parse_by_cities(students))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+numbers = [1, 2, 3, 4]
+def addition(num):
+    return num + num
+
+result = map(addition, numbers)
+# print(result)
+
+result2 = map(lambda x: x + x, numbers)
+# print(list(result2))
+
+result3 = map(lambda y: y * y, numbers)
+# print(list(result3))
+
+numbers1 = [1, 2, 3]
+numbers2 = [4, 5, 6]
+  
+result4 = map(lambda x, y: x + y, numbers1, numbers2)
+# print(list(result4))
+
+
+# a list contains both even and odd numbers. 
+seq = [0, 1, 2, 3, 5, 8, 13]
+  
+# result contains odd numbers of the list
+result5 = filter(lambda x: x % 2 != 0, seq)
+# print(list(result5)) # [1, 3, 5, 13]
+  
+# result contains even numbers of the list
+result6 = filter(lambda x: x % 2 == 0, seq)
+# print(list(result6)) # [0, 2, 8]
