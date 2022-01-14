@@ -136,7 +136,7 @@ def fizz_buzz_1(max):
 fizz_buzz_1(20)
 
 
-def event_caps(sentence):
+def even_caps(sentence):
     new_sentence = ""
     for i in range(0, len(sentence)):
         char = sentence[i]
@@ -148,4 +148,4 @@ def event_caps(sentence):
     return new_sentence
 
 
-print(event_caps("Hello World"))
+print(even_caps("Hello World"))
