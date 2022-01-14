@@ -16,11 +16,11 @@ print(adults(ppl)); # => [ 'Khalid Robinson', 'Post Malone' ]
 '''
 
 def adults(people):
-  legal_adult = []
+  adult = []
   for i in range(0,len(people)):
     if (people[i]['age'] >= 18):
-      legal_adult.append(people[i]['name'])
-  return legal_adult
+      adult.append(people[i]['name'])
+  return adult
 
 ppl = [
   {'name': 'Khalid Robinson', 'age': 22},
