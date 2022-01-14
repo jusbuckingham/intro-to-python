@@ -125,29 +125,27 @@ def checkNumber(num):
 print(checkNumber(5))
 
 
-def fizzBuzz1(max):
-    for i = 0; i < max; i += 1
+# def fizzBuzz1(max):
+#     for i = 0; i < max; i += 1
 
-    if i % 3 == 0 and i % 5 not = 0:
-        print(i)
-    elif i % 5 == 0 and i % 3 not 0)
-        print(i)
-
-
-
-
-def evenCaps(sentence):
-  newSentence=""
-
-  for i=0; i < len(sentence) i++:
-    char=sentence[i];
-
-    if i % 2 === 0:
-      capitalChar=char.toUpperCase()
-      newSentence += capitalCha
-     else:
-      newSentence += char
+#     if i % 3 == 0 and i % 5 not = 0:
+#         print(i)
+#     elif i % 5 == 0 and i % 3 not 0)
+#         print(i)
 
 
 
-  return newSentence;
+
+# def evenCaps(sentence):
+#   newSentence=""
+
+#   for i=0; i < len(sentence) i++
+#     char=sentence[i]
+
+#     if i % 2 == 0:
+#       capitalChar=char.upper()
+#       newSentence += capitalCha
+#     else:
+#       newSentence += char
+
+#     return newSentence
