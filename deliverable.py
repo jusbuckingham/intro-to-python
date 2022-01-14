@@ -126,14 +126,16 @@ print(check_number(5))
 
 
 def fizz_buzz_1(max):
-    for i in range(0, max):
+    for i in range(max):
         if i % 3 == 0 and i % 5 != 0:
-            print(i)
+            print(i, 'fizz')
         elif i % 5 == 0 and i % 3 != 0:
-            print(i)
+            print(i, 'buzz')
+        elif 1 % 5 == 0 and i % 3 == 0:
+            print(i, 'fizzbuzz')
 
 
-fizz_buzz_1(20)
+fizz_buzz_1(30)
 
 
 def even_caps(sentence):
