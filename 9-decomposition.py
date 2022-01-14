@@ -4,10 +4,12 @@ In these exercises we will be practicing decomposition by building
 multiple functions. Be sure to test each function thoroughly as you go
 before moving on to the next problem. Each function will require the
 previous to solve.
+***********************************************************************/
 '''
 
 
 '''
+/***********************************************************************
 Write a function `is_prime(number)` that returns a boolean indicating if
 `number` is prime or not. Assume `number` is a positive integer.
 
@@ -17,6 +19,7 @@ print(is_prime(2)) # => True
 print(is_prime(1693)) # => True
 print(is_prime(15)) # => False
 print(is_prime(303212)) # => False
+***********************************************************************/
 '''
 
 
@@ -46,6 +49,7 @@ Examples:
 print(first_n_primes(0)) # => []
 print(first_n_primes(1)) # => [2]
 print(first_n_primes(4)) # => [2, 3, 5, 7]
+***********************************************************************/
 '''
 
 
@@ -65,6 +69,7 @@ print(first_n_primes(1))  # => [2]
 print(first_n_primes(4))  # => [2, 3, 5, 7]
 
 '''
+/***********************************************************************
  Using `first_n_primes`, write a function `sum_of_n_primes(n)` that returns
 the sum of the first `n` prime numbers.
 
