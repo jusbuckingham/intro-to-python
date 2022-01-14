@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 Write a function `adults(people)` that takes in an array of person
 objects. The function should return an array containing the names of
 those who have an age of 18 or higher.

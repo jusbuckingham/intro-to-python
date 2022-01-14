@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 Define a function `is_prime(number)` that returns `True` if `number` is prime.
 Otherwise, False. Assume `number` is a positive integer.
 

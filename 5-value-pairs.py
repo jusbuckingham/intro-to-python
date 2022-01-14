@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 Write a function `value_pair(obj1, obj2, key)` that takes in two objects
 and a key (string). The function should return an array containing the
 corresponding values of the objects for the given key.

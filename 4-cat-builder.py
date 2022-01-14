@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 Write a function `cat_builder(name, color, toys)` that returns a cat object
 object with the corresponding properties.
 

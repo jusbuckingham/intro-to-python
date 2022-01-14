@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 Write a function `countScores(people)` that takes in an array of score
 objects (people) as its input. A score object has two key-value pairs:
 a name (string) and a score (number). `countScores(people)` should

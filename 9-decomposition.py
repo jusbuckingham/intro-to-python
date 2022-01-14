@@ -1,4 +1,5 @@
 '''
+/***********************************************************************
 In these exercises we will be practicing decomposition by building
 multiple functions. Be sure to test each function thoroughly as you go
 before moving on to the next problem. Each function will require the
@@ -38,6 +39,7 @@ print(is_prime(303212))  # => False
 
 
 '''
+/***********************************************************************
 Using the `is_prime` function you made, write a function `first_n_primes(n)`
 that returns an array of the first `n` prime numbers.
 
