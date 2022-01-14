@@ -140,7 +140,7 @@ fizz_buzz_1(30)
 
 def even_caps(sentence):
     new_sentence = ""
-    for i in range(0, len(sentence)):
+    for i in range(len(sentence)):
         char = sentence[i]
         if i % 2 == 0:
             capital_char = char.upper()

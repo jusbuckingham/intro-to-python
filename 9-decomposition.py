@@ -19,12 +19,9 @@ print(is_prime(15)) # => False
 print(is_prime(303212)) # => False
 '''
 
-
 def is_prime(number):
-    if number == 1:
+    if number < 2:
         return False
-    if number == 2:
-        return True
     for i in range(2, number):
         if number % i == 0:
             return False
