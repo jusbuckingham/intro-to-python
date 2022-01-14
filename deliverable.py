@@ -129,7 +129,7 @@ def fizz_buzz_1(max):
     for i in range(0, max):
         if i % 3 == 0 and i % 5 != 0:
             print(i)
-        elif (i % 5 == 0 and i % 3 != 0):
+        elif i % 5 == 0 and i % 3 != 0:
             print(i)
 
 
