@@ -89,31 +89,31 @@ if num > 5:
 
 num = 5
 if num > 5:
-  print('if')
+    print('if')
 else:
-  print('else')
+    print('else')
 
 
 num = 0
-if (num < 0):
-  print('if')
-elif (num > 0):
-  print('elif')
+if num < 0:
+    print('if')
+elif num > 0:
+    print('elif')
 else:
-  print('else')
+    print('else')
 
 
 # Task 5
 
-def sayHello(name):
-  msg = 'Hello, ' + name + '. How are you?'
-  return msg
+def say_hello(name):
+    msg = 'Hello, ' + name + '. How are you?'
+    return msg
 
 
-print(sayHello('bootcamp prep'))
+print(say_hello('bootcamp prep'))
 
 
-def checkNumber(num):
+def check_number(num):
     if num > 0:
         return 'positive'
     elif num < 0:
@@ -122,30 +122,30 @@ def checkNumber(num):
         return 'zero'
 
 
-print(checkNumber(5))
+print(check_number(5))
 
 
-# def fizzBuzz1(max):
-#     for i = 0; i < max; i += 1
-
-#     if i % 3 == 0 and i % 5 not = 0:
-#         print(i)
-#     elif i % 5 == 0 and i % 3 not 0)
-#         print(i)
-
+def fizz_buzz_1(max):
+    for i in range(0, max):
+        if i % 3 == 0 and i % 5 != 0:
+            print(i)
+        elif (i % 5 == 0 and i % 3 != 0):
+            print(i)
 
 
+fizz_buzz_1(20)
 
-# def evenCaps(sentence):
-#   newSentence=""
 
-#   for i=0; i < len(sentence) i++
-#     char=sentence[i]
+def even_caps(sentence):
+    new_sentence = ""
+    for i in range(0, len(sentence)):
+        char = sentence[i]
+        if i % 2 == 0:
+            capital_char = char.upper()
+            new_sentence += capital_char
+        else:
+            new_sentence += char
+    return new_sentence
 
-#     if i % 2 == 0:
-#       capitalChar=char.upper()
-#       newSentence += capitalCha
-#     else:
-#       newSentence += char
 
-#     return newSentence
+print(even_caps("Hello World"))
